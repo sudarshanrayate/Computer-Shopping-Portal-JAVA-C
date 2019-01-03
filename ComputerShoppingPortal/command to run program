@@ -1,0 +1,5 @@
+1.javac APP.java
+2.javah APP
+3.gcc -shared -o calclogic.so calclogic.c -fPIC
+4.gcc -o libcalc.so -shared -I/usr/lib/jvm/java-8-oracle/include -I/usr/lib/jvm/java-8-oracle/include/linux calc.c -lc -fPIC
+5.java -Djava.library.path=/home/sudarshan/Desktop/ComputerShoppingPortal APP
